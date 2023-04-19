@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOFI DRUMS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/be57789c5e.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- <audio src="./assets/program-music-loop-73754.mp3" autoplay loop></audio> -->
+    <audio
+      data-key="87"
+      src="assets/01 - JavaScript Drum Kit_sounds_clap.wav"
+    ></audio>
+    <audio
+      data-key="83"
+      src="assets/01 - JavaScript Drum Kit_sounds_hihat.wav"
+    ></audio>
+    <audio
+      data-key="68"
+      src="assets/01 - JavaScript Drum Kit_sounds_kick.wav"
+    ></audio>
+    <audio
+      data-key="65"
+      src="assets/01 - JavaScript Drum Kit_sounds_openhat.wav"
+    ></audio>
+    <audio
+      data-key="32"
+      src="./assets/01 - JavaScript Drum Kit_sounds_boom (1).wav"
+    ></audio>
+    <audio
+      data-key="38"
+      src="assets/01 - JavaScript Drum Kit_sounds_ride.wav"
+    ></audio>
+    <audio
+      data-key="39"
+      src="assets/01 - JavaScript Drum Kit_sounds_snare.wav"
+    ></audio>
+    <audio
+      data-key="40"
+      src="assets/01 - JavaScript Drum Kit_sounds_tom.wav"
+    ></audio>
+    <audio
+      data-key="37"
+      src="assets/01 - JavaScript Drum Kit_sounds_tink.wav"
+    ></audio>
+    <audio data-key="37" src="assets/take-your-seats-40322.mp3"></audio>
+
+    <div class="button__mash--section">
+      <section class="description">
+        <h1 class="title">Lofi drums <i class="fa-solid fa-music"></i></h1>
+        <p class="subtitle">Hit keys to jam fast or click on each button to jam slow with this lofi girl </p>
+      </section>
+      <ul class="buttons">
+        <button class="keyboard__keys" id="keyW"  data-key="87" onclick="audioW.play()">
+          W <br /><span class="span">Clap</span>
+        </button>
+        <button class="keyboard__keys" id="keyD" data-key="68" onclick="audioD.play()">
+          D <br /><span class="span">Hihat</span>
+        </button>
+        <button class="keyboard__keys" id="keyS" data-key="83" onclick="audioS.play()">
+          S <br /><span class="span">Kick</span>
+        </button>
+        <button class="keyboard__keys" id="keyA" data-key="65" onclick="audioA.play()">
+          A <br /><span class="span">Openhat</span>
+        </button>
+        <button
+          class="keyboard__keys" id="keySpace"
+          data-key="32"
+          onclick="audioSpace.play()"
+        >
+          SPACE <br /><span class="span">Boom</span>
+        </button>
+        <button class="keyboard__keys" id="keyM" onclick="audioSpace.play()">
+          M <br /><span class="span">Take your seats</span>
+        </button>
+        <button
+          class="keyboard__keys" id="keyUp"
+          data-key="38"
+          onclick="audioArrowup.play()"
+        >
+          <i class="fa-solid fa-caret-up"></i> <br /><span class="span"
+            >Ride</span
+          >
+        </button>
+        <button
+          class="keyboard__keys" id="keyRight" 
+          data-key="39"
+          onclick="audioArrowright.play()"
+        >
+          <i class="fa-solid fa-caret-right"></i> <br /><span class="span"
+            >Snare</span
+          >
+        </button>
+        <button
+          class="keyboard__keys" id="keyDown" 
+          data-key="40"
+          onclick="audioArrowdown.play()"
+        >
+          <i class="fa-solid fa-caret-down"></i> <br /><span class="span"
+            >Tom</span
+          >
+        </button>
+        <button
+          class="keyboard__keys" id="keyLeft" 
+          data-key="37"
+          onclick="audioArrowleft.play()"
+        >
+          <i class="fa-solid fa-caret-left"></i> <br /><span class="span"
+            >Tink</span
+          >
+        </button>
+      </ul>
+    </div>
+  </body>
+</html>
